@@ -1,4 +1,4 @@
-(function($) {
+(function() {
 
   getBrowserScrollbarWidth = function() {
     var outer, outerStyle, scrollbarWidth;
