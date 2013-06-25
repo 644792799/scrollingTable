@@ -46,8 +46,9 @@
 
     for (i=0, l = elBody.length; i < l; i++) {
       var theadHeight = elHead[i].offsetHeight;
-      elBody[i].style.paddingTop = theadHeight + 'px';
-      elBody[i].style.top        = -(theadHeight +1) + 'px';
+      elBody[i].style.paddingTop   = theadHeight + 'px';
+      elBody[i].style.marginBottom = -(theadHeight +1) + 'px';
+      elBody[i].style.top          = -(theadHeight +1) + 'px';
     };
 
   };

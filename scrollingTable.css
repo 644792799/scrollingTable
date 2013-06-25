@@ -17,6 +17,7 @@ body {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  width: 100%;
 }
 
 
@@ -29,12 +30,8 @@ table {
   overflow: hidden;
 }
 
-.ScrollingTable table {
-  width: 100%;
-}
-
 .ScrollingTable-head {
-  z-index: 100;
+  z-index: 1;
 }
 
 .ScrollingTable-head table {
@@ -45,7 +42,6 @@ table {
   width: 100%;
   height: 250px;
   overflow: auto;
-  background: #ccc;
 }
 
 
@@ -53,9 +49,22 @@ table {
 /* Visual Stuff
    ------------ */
 
+.ScrollingTable {
+  border-bottom: 1px solid #999;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.15);
+}   
+
+.ScrollingTable-body {
+  background: #ddd;   
+}
+
 .ScrollingTable td, 
 .ScrollingTable th {
   text-align: left;
+}
+
+.ScrollingTable-body tr:last-child td {
+  border-bottom: 0;
 }
 
 .ScrollingTable td:last-child, 
@@ -64,6 +73,6 @@ table {
 }
 
 th, td {
-  border: 1px solid #999;
+  border: 1px solid #aaa;
   padding: 10px;
 }
