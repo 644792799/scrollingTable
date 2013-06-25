@@ -32,9 +32,7 @@
   window.scrollingTable = function() {
 
     syncCols({
-      target:   document.querySelectorAll('.ScrollingTable-head table'),
-      targetTd: document.querySelectorAll('.ScrollingTable-head th'),
-      model:    document.querySelectorAll('.ScrollingTable-body table'),
+      targetTd: document.querySelectorAll('.ScrollingTable-head th'),      
       modelTd:  document.querySelectorAll('.ScrollingTable-body td')
     });
 
